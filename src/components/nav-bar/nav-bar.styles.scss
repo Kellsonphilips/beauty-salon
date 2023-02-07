@@ -1,0 +1,23 @@
+.navbar_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  position: relative;
+  right: 85vw;
+  z-index: 5;
+  
+  .navbar {
+    color: var(--secondary-font-color);
+    text-align: center;
+    font-size: 7vw;
+    font-weight: 800;
+    margin: 1rem 0;
+    position: relative;
+    bottom: 5rem;
+    text-decoration: none;
+  }
+}

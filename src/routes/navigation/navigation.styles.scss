@@ -1,0 +1,26 @@
+.navigation_container {
+  width: 86vw;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #e2dede;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  .navigation_home_container {
+
+    .nav_sub_container {
+      color: var(--secondary-color);
+    }
+  }
+
+  .navigation_switch_container {
+    padding-top: 1.5rem;
+    position: fixed;
+    left: 85vw;
+    z-index: 3;
+  }
+}
