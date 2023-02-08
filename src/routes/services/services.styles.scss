@@ -1,0 +1,20 @@
+.service_container {
+  width: 100vw;
+  padding: 0 1.5rem;
+
+  .service_header {
+    color: var(--secondary-font-color);
+    font-size: 7vw;
+  }
+
+  .detail_container {
+    line-height: 6vw;
+    .detail_span {
+      color: var(--secondary-color);
+    }
+  }
+
+  .card_detail_container {
+    width: 100vw;
+  }
+}

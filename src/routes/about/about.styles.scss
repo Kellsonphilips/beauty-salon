@@ -1,0 +1,37 @@
+.about_container {
+  width: 100vw;
+  margin: 5rem 0;
+  padding: 5rem 0;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+
+  .image_conatiner1 {
+    width: 100vw;
+    height: 40vh;
+    margin: 3rem 0;
+    box-shadow: -10rem -2.5rem var(--primary-color);
+  }
+
+  .about_details_container {
+    width: 100vw;
+
+    .about_container_header {
+      color: var(--secondary-font-color);
+      font-size: 7vw;
+      padding: 0 1.5rem;
+
+    }
+
+    .about_details {
+      color: var(--secondary-font-color-1);
+      line-height: 6vw;
+      padding: 0 1.5rem;
+    }
+    .image_conatiner2 {
+      width: 100vw;
+      height: 40vh;
+      margin: 3rem 0;
+      box-shadow: 10rem -2.5rem var(--primary-color);
+    }
+  }
+}
