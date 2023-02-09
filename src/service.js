@@ -1,6 +1,6 @@
-import Hair from "./assets/icons/comb-on-hair.png";
-import Scissors_Comb from "./assets/icons/scissors-and-comb.png";
-import Shampoo from "./assets/icons/soap-shampoo.png";
+import Hair from "./assets/icons/images/woman-hair.png";
+import Scissors_Comb from "./assets/icons/images/scissors-and-comb.png";
+import Shampoo from "./assets/icons/images/shampoo.png";
 
 const service = [
   {
