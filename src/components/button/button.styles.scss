@@ -2,11 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
-  width: 13rem;
+  height: clamp(2.5rem, 5vw, 3rem);
+  width: clamp(10rem, 20vw, 13rem);
   color: var(--primary-font-color);
   background-color: var(--secondary-color);
   border-radius: 5px;
-  font-size: .9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
   cursor: pointer;
+  padding: 0 clamp(1rem, 2vw, 1.5rem);
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button_component {
+    width: 100%;
+    max-width: 13rem;
+  }
 }

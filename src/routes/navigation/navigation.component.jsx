@@ -1,33 +1,46 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Outlet } from "react-router";
-import { ReactComponent as OpenMenu } from "../../assets/shared-icon/icon-close.svg";
-import { ReactComponent as CloseMenu } from "../../assets/shared-icon/icon-hamburger.svg";
-import NavBar from "../../components/nav-bar/nav-bar.component";
 import "./navigation.styles.scss";
 
 const Navigation = () => {
-  const [isNavBarOpen, setIsNavBarOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleNavbarChange = () => {
-    setIsNavBarOpen(!isNavBarOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div className="navigation_container">
-      <h2 className="navigation_home_container">
-        beauty<span className="nav_sub_container">Salon</span>.
-      </h2>
-      <div className="navigation_switch_container" onClick={handleNavbarChange}>
-        {isNavBarOpen ? (
-          <div>
-            <OpenMenu />
-            <NavBar />
-          </div>
-        ) : (
-          <CloseMenu />
-        )}
-      </div>
-      <Outlet />
+    <div className="navigation">
+      <header className="navigation_header">
+        <Link to="/" className="navigation_home_container">
+          beauty<span className="nav_sub_container">Salon</span>.
+        </Link>
+        <button
+          className={`hamburger ${isOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav className={isOpen ? "open" : ""}>
+          <Link to="/" onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link to="/about" onClick={toggleMenu}>
+            About
+          </Link>
+          <Link to="/services" onClick={toggleMenu}>
+            Services
+          </Link>
+          <Link to="/testimonies" onClick={toggleMenu}>
+            Testimonies
+          </Link>
+          <Link to="/contact" onClick={toggleMenu}>
+            Contact
+          </Link>
+        </nav>
+      </header>
     </div>
   );
 };

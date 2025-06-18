@@ -1,42 +1,76 @@
-import About_Us from "../../assets/images/about-us.jpg";
-import About_Us1 from "../../assets/images/about-us1.jpg";
+import About_Us from "../../assets/icons/images/about-us.jpg";
+import About_Us1 from "../../assets/icons/images/about-us1.jpg";
 import "./about.styles.scss";
 
 const About = () => {
   return (
     <div className="about_container">
-      <img className="image_conatiner1" src={About_Us} alt="about_us_image" />
+      <div className="about_hero">
+        <img className="image_container1" src={About_Us} alt="Beauty salon interior" />
+        <div className="hero_content">
+          <h1>Welcome to Beauty Salon</h1>
+          <p>Where Beauty Meets Excellence</p>
+        </div>
+      </div>
+
       <div className="about_details_container">
-        <h2 className="about_container_header">About Us</h2>
-        <p className="about_details">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. 
-        </p>
-        <img
-          className="image_conatiner2"
-          src={About_Us1}
-          alt="about_us_image"
-        />
-        <p className="about_details">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English.
-          <br />
-          <br />
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source.
-        </p>
+        <section className="about_section">
+          <h2>Our Story</h2>
+          <p>
+            Founded in 2010, Beauty Salon has been at the forefront of beauty and wellness services in New York City. 
+            What started as a small family-owned business has grown into a premier destination for beauty enthusiasts, 
+            thanks to our unwavering commitment to quality, innovation, and customer satisfaction.
+          </p>
+        </section>
+
+        <section className="about_section">
+          <h2>Our Mission</h2>
+          <p>
+            At Beauty Salon, we believe that everyone deserves to feel beautiful and confident. Our mission is to provide 
+            exceptional beauty services in a welcoming environment where clients can relax, rejuvenate, and transform. 
+            We combine traditional techniques with modern innovations to deliver outstanding results that exceed expectations.
+          </p>
+        </section>
+
+        <div className="image_section">
+          <img
+            className="image_container2"
+            src={About_Us1}
+            alt="Beauty salon services"
+          />
+        </div>
+
+        <section className="about_section">
+          <h2>Our Expertise</h2>
+          <p>
+            Our team of highly skilled professionals brings years of experience and continuous training to every service. 
+            From hair styling and coloring to skincare and nail care, our experts stay updated with the latest trends and 
+            techniques in the beauty industry. We pride ourselves on our attention to detail and personalized approach to 
+            each client's unique needs.
+          </p>
+        </section>
+
+        <section className="about_section">
+          <h2>Our Commitment</h2>
+          <p>
+            We are committed to using only the highest quality products and maintaining the highest standards of hygiene 
+            and safety. Our salon is equipped with state-of-the-art facilities and premium products from leading brands 
+            in the beauty industry. We continuously invest in our team's development and our facility's improvement to 
+            ensure the best possible experience for our clients.
+          </p>
+        </section>
+
+        <section className="about_section">
+          <h2>Why Choose Us</h2>
+          <ul className="features_list">
+            <li>Experienced and certified professionals</li>
+            <li>Premium quality products and equipment</li>
+            <li>Personalized service and attention</li>
+            <li>Relaxing and welcoming atmosphere</li>
+            <li>Convenient location and flexible hours</li>
+            <li>Competitive pricing and value for money</li>
+          </ul>
+        </section>
       </div>
     </div>
   );
